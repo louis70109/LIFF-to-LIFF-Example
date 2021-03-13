@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>A 頁面</title>
+  </head>
+  <body>
+    <h1>{{text}}</h1>
+    <button onclick="javascript:location.href='{{next}}'">GO B頁面</button>
+    <script src="https://static.line-scdn.net/liff/edge/versions/2.7.1/sdk.js"></script>
+  </body>
+  <script>
+    liff
+    .init({ liffId: '{{ liff_id }}' })
+    .then(() => {
+        alert("Hi")
+    })
+    .catch((err) => {
+      alert(err)
+    });
+  </script>
+</html>

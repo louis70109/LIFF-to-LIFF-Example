@@ -1,0 +1,22 @@
+{
+  "name": "LIFF-to-LIFF-Example",
+  "description": "LINE's LIFF to LIFF Example",
+  "repository": "https://github.com/louis70109/LIFF-to-LIFF-Example",
+  "keywords": [
+    "LINE",
+    "flask",
+    "python",
+    "static"
+  ],
+  "env": {
+    "PY_ENV": "production"
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-python.git"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
